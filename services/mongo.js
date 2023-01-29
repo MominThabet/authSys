@@ -10,7 +10,7 @@ mongoose.connection.on('error', (err) => {
 });
 async function mongoConnect() {
     await mongoose.connect(MONGO_URL, {
-        usrNewUrlParser: true,
+        useNewUrlParser: true,
     });
 }
 async function mongoDisconnect() {
